@@ -1,17 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Inter } from "next/font/google";
-// import { ThemeProvider } from "@/components/theme-provider";
-import { Toaster } from "@/components/ui/toaster";
-import { BottomNav } from '@/components/ComponentsExport';
-import { Navbar } from "@/components/Navbar";
 import "./globals.css";
-
-// Font configuration
-const inter = Inter({
-  subsets: ["latin"],
-  display: 'swap',
-  variable: '--font-inter',
-});
 
 // App configuration
 const APP_CONFIG = {
@@ -171,29 +159,14 @@ export default function RootLayout({
     <html
       lang="en"
       suppressHydrationWarning
-      className={inter.variable}
     >
       <head>
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
       </head>
       <body>
-        {/* <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        > */}
         <div
-          className={`
-              relative 
-              flex 
-              min-h-[100dvh] 
-              flex-col 
-              bg-background 
-              antialiased
-              ${inter.className}
-            `}
+          className={`relative flex min-h-[100dvh] flex-col bg-background antialiased`}
         >
           {/* Max width container */}
           <div className="mx-auto w-full max-w-md">
@@ -212,7 +185,6 @@ export default function RootLayout({
             <Toaster />
           </div>
         </div>
-        {/* </ThemeProvider> */}
       </body>
     </html >
   );
