@@ -181,8 +181,6 @@ export default function RootLayout({
             {/* Bottom Navigation */}
             {/* <BottomNav /> */}
 
-            {/* Toast Notifications */}
-            <Toaster />
           </div>
         </div>
       </body>
