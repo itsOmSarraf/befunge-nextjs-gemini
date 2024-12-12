@@ -1,36 +1,78 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Befunge Code Generator
 
-## Getting Started
+A web application that generates optimized Befunge code using Google's Gemini AI. This tool allows users to input desired output text and receive corresponding Befunge-93 code that will produce that exact output.
 
-First, run the development server:
+## Features
+
+- Simple and intuitive web interface
+- Real-time code generation using Gemini AI
+- Copy-to-clipboard functionality
+- Error handling and loading states
+- Optimized Befunge code generation
+- Modern UI using shadcn/ui components
+
+## Prerequisites
+
+- Node.js 18+ installed
+- A Google API key (Gemini API)
+
+## Installation
+
+1. Clone the repository:
+
+```bash
+git clone [your-repo-url]
+cd befunge-generator
+```
+
+2. Install dependencies:
+
+```bash
+npm install
+```
+
+3. Set up environment variables:
+   Create a `.env` file in the root directory and add:
+
+```env
+GEMINI_API_KEY=your_google_api_key_here
+```
+
+4. Start the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Usage
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Open the application in your browser
+2. Enter the text you want your Befunge code to output
+3. Click "Generate Code"
+4. Copy the generated code using the copy button
+5. Use the code in any Befunge-93 interpreter
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Dependencies
 
-## Learn More
+- Next.js
+- React
+- @google/generative-ai
+- shadcn/ui components
+- Lucide React icons
 
-To learn more about Next.js, take a look at the following resources:
+## Getting a Google API Key
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Visit the Google AI Studio: https://aistudio.google.com/app/apikey
+2. Create or sign in to your Google account
+3. Create a new API key
+4. Copy the key and add it to your `.env` file
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Acknowledgments
 
-## Deploy on Vercel
+- Built with Next.js and shadcn/ui
+- Uses Google's Gemini AI for code generation
+- Inspired by the esoteric programming language Befunge-93
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## License
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+[Your chosen license]
